@@ -119,3 +119,4 @@ console.log(allgroceries.sort());
 let no=[6,2,1,7,9,4,21,98,34,11];
 console.log(no.sort(function(a,b){return a-b})); //ascending order
 */
+//
