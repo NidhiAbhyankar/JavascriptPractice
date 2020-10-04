@@ -1,9 +1,9 @@
-console.log('hellooo');
+//console.log('hellooo');
 //alert('yooo');
 
 //variables
-var b='smootie';
-console.log(b);
+//var b='smootie';
+//console.log(b);
 
 /*var someNumber=45;
 console.log(someNumber);*/
@@ -95,7 +95,7 @@ console.log(fruit.toUpperCase(fruit));
 console.log(fruit.toLowerCase(fruit));
 console.log(fruit.charAt(2));
 console.log(fruit[2]);
-console.log(fruit.split(''));  //spli by character
+console.log(fruit.split(''));  //split by character
 */
 
 //arrays
@@ -119,4 +119,53 @@ console.log(allgroceries.sort());
 let no=[6,2,1,7,9,4,21,98,34,11];
 console.log(no.sort(function(a,b){return a-b})); //ascending order
 */
-//
+
+
+//objects in javascript
+//dictionary in python
+/*
+let student={
+	first:'nidhi',
+	last:'abhyanakr',
+	age:20,
+	height:150,
+	studentInfo: function(){
+		return this.first + '\n'+ this.last;
+	}
+};
+console.log(student.first);
+console.log(student.last);
+//student.first='notNidhi';
+console.log(student.first);
+student.age++;
+console.log(student.age);
+console.log(student.studentInfo());
+*/
+
+//conditional ,control flows
+/*
+var age=prompt('what is your age?');
+if((age>=18) && (age<=35)){
+	status='target demo';
+	console.log(status);
+}else{
+	status='not my audience';
+	console.log(status);
+}
+
+
+//switch statement
+//differnentiate between weekday vs. weekend
+switch(6){
+	case 0:
+	case 5:
+	case 6:
+			text='weekend';
+			break;
+	default:
+			text='weekday';
+			break;
+
+} 
+console.log(text);
+*/
