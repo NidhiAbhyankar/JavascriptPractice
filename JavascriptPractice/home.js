@@ -13,7 +13,7 @@ console.log(someNumber);*/
 document.getElementById('sometext').innerHTML=age;
 */
 
-//numbers 
+//numbers
 /*
 var num1=10;
 //console.log(5*10);
@@ -166,6 +166,10 @@ switch(6){
 			text='weekday';
 			break;
 
-} 
+}
 console.log(text);
 */
+
+
+const demos= document.getElementsByTagName('h2');
+demos.style.color='red';

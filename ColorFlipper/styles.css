@@ -1,0 +1,29 @@
+h1{
+  color: black;
+  text-align: center;
+  font-size: 50px;
+}
+
+.container,.nav-links{
+	color:black;
+	text-align: center;
+	font-size: 20px;
+}
+a{
+	color:black;
+}
+a:hover {
+	color:grey;
+}
+
+ul {
+  list-style-type: none;
+  margin:0;
+ 
+}
+
+li{
+	display:inline;
+	font-size: 20px;
+
+}
