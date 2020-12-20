@@ -69,6 +69,7 @@ result.innerHTML=categories.map((category)=>{
 //dynamic object keys
 
 //filter and Find
+/*
 const people=[
   {name:'nidhi',age:20,position:'designer'},
   {name:'radha',age:20,position:'developer'},
@@ -89,3 +90,19 @@ console.log(fruit);
 
 //if no match we get undefined in find method whereas it returns an empty array in filter
 //multiple matches-just returns first match in find method
+*/
+
+//reduce
+const staff=[
+  {name:'nidhi',age:20,position:'designer',salary:200},
+  {name:'radha',age:20,position:'developer',salary:100},
+  {name:'aditi',age:35,position:'manager',salary:500}
+];
+
+const dailyTotal=staff.reduce((total,person)=>{
+console.log(total);
+  total+=person.salary;
+
+  return total;
+},0);
+console.log(dailyTotal);
