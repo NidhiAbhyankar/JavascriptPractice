@@ -34,6 +34,7 @@ result.innerHTML=names.join('');
 */
 
 //unique values
+/*
 const menu=[
   {
     name:'oats',
@@ -63,3 +64,28 @@ const result=document.querySelector('.result');
 result.innerHTML=categories.map((category)=>{
   return `<button>${category}</button>`;
 }).join('');
+*/
+
+//dynamic object keys
+
+//filter and Find
+const people=[
+  {name:'nidhi',age:20,position:'designer'},
+  {name:'radha',age:20,position:'developer'},
+  {name:'aditi',age:35,position:'manager'}
+];
+
+const youngPeople=people.filter((person)=>{
+  // if(person.age<30){
+  //   return person;
+  // }
+  return person.age<30;
+});
+console.log(youngPeople);
+
+const fruits=['apple','banana','orange'];
+const fruit=fruits.find((item)=> item==='apple');   //returns single instance
+console.log(fruit);
+
+//if no match we get undefined in find method whereas it returns an empty array in filter
+//multiple matches-just returns first match in find method
