@@ -111,7 +111,7 @@ console.log(dailyTotal);
 
 
 //split Operator
-
+/*
 const udemy='udemy';
 const letters=[...udemy];
 console.log(letters);
@@ -132,3 +132,43 @@ const person={name:'bob',job:'developer'};
 const newPerson={...person,city:'North carolina',name:'john'};
 console.log(person);
 console.log(newPerson);
+*/
+
+//reduce Object
+const cart=[
+  {
+    title:'samasung galaxy j7',
+    price:399.59,
+    amount:1
+  },
+  {
+    title:'redmi note 5',
+    price:499.99,
+    amount:2
+  },
+  {
+    title:'redmi note pro 9',
+    price:799.99,
+    amount:4
+  },
+  {
+    title:'google pixel',
+    price:599.999,
+    amount:3
+  }
+];
+
+let {totalItems,cartTotal}=cart.reduce((total,cartItem)=>{
+  const {amount,price}=cartItem;
+  //count items
+  total.totalItems+=amount;
+  //count sum
+  total.cartTotal+=amount*price;
+  return total;
+},{
+  totalItems:0,
+  cartTotal:0,
+});
+
+cartTotal=parseFloat(cartTotal.toFixed(2));
+console.log(totalItems,cartTotal);
