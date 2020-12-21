@@ -93,6 +93,7 @@ console.log(fruit);
 */
 
 //reduce
+/*
 const staff=[
   {name:'nidhi',age:20,position:'designer',salary:200},
   {name:'radha',age:20,position:'developer',salary:100},
@@ -106,3 +107,28 @@ console.log(total);
   return total;
 },0);
 console.log(dailyTotal);
+*/
+
+
+//split Operator
+
+const udemy='udemy';
+const letters=[...udemy];
+console.log(letters);
+
+const girls=['nidhi','radha'];
+const boys=['niraj','vidit'];
+const bestfriend='aditi';
+const friends=[...girls,bestfriend,...boys];
+console.log(friends);
+
+//for just copying without reference use split Operator
+const newfriends=[...friends];
+newfriends[2]='shreya';
+console.log(friends);
+console.log(newfriends);
+
+const person={name:'bob',job:'developer'};
+const newPerson={...person,city:'North carolina',name:'john'};
+console.log(person);
+console.log(newPerson);
