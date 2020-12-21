@@ -135,6 +135,7 @@ console.log(newPerson);
 */
 
 //reduce Object
+/*
 const cart=[
   {
     title:'samasung galaxy j7',
@@ -172,3 +173,27 @@ let {totalItems,cartTotal}=cart.reduce((total,cartItem)=>{
 
 cartTotal=parseFloat(cartTotal.toFixed(2));
 console.log(totalItems,cartTotal);
+*/
+
+//Array.from
+/*
+const text=document.querySelectorAll('.text');
+console.log(text);      //nodeList
+const newText=Array.from(text).find((item)=>item.textContent==='person');
+console.log(newText);   //turned into an array
+
+const items=Array.from({ length:120 },(_,index)=>{
+  return index;
+});
+
+const itemsPerPage=14;
+const pages=Math.ceil(items.length/itemsPerPage);
+console.log(pages);
+
+const newItems=Array.from({ length:pages },(_,index)=>{
+  const start=index*itemsPerPage;
+  const tempItems=items.slice(start,start+itemsPerPage);
+  return tempItems;
+});
+console.log(newItems);
+*/
