@@ -1,4 +1,4 @@
 # JavascriptPractice
 
 
-Javascript concepts and implementation of basic projects using the same.
+Javascript concepts and implementation of beginners/intermediary projects using the same.
